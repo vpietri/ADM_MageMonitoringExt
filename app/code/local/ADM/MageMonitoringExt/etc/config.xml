@@ -38,30 +38,43 @@
         <!-- Insert a new tab with 2 widgets -->
         <magemonitoring>
             <tabs>
-                <dummy>
-                    <label>Dummy Widgets</label>
-                    <title>Dummy Widgets</title>
-                    <display_prio>500</display_prio>
+                <mage_events>
+                    <label>Class Events</label>
+                    <title>Class Events</title>
+                    <display_prio>50</display_prio>
                     <widgets>
-                      <dummy_widget>
-                        <impl>ADM_MageMonitoringExt_Model_Widget_Dummy_Dummy</impl>
-                        <display_prio>10</display_prio>
-                      </dummy_widget>
-                      <cache_dummy_widget>
-                        <impl>ADM_MageMonitoringExt_Model_Widget_Dummy_CacheDummy</impl>
-                        <display_prio>20</display_prio>
-                      </cache_dummy_widget>
+                        <events_local>
+                            <impl>ADM_MageMonitoringExt_Model_Widget_Events</impl>
+                            <title>Modules local</title>
+                            <code_pool>local</code_pool>
+                            <collapsed>1</collapsed>
+                            <display_prio>10</display_prio>
+                        </events_local>
+                        <events_community>
+                            <impl>ADM_MageMonitoringExt_Model_Widget_Events</impl>
+                            <title>Modules community</title>
+                            <code_pool>community</code_pool>
+                            <collapsed>1</collapsed>
+                            <display_prio>20</display_prio>
+                        </events_community>          
+                        <events_core>
+                            <impl>ADM_MageMonitoringExt_Model_Widget_Events</impl>
+                            <title>Modules core</title>
+                            <code_pool>core</code_pool>
+                            <collapsed>1</collapsed>
+                            <display_prio>30</display_prio>
+                        </events_core>                                        
                     </widgets>
-                </dummy>
+                </mage_events>    
             </tabs>
         </magemonitoring>
     </default>
 
     <global>
         <helpers>
-            <magemonitoring_ext>
+            <adm_magemonitoring>
                 <class>ADM_MageMonitoringExt_Helper</class>
-            </magemonitoring_ext>
+            </adm_magemonitoring>
         </helpers>
 
         <!-- declare widget folder so magemonitoring can pick up the widgets without tab config -->
