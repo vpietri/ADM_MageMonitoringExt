@@ -49,6 +49,7 @@ class ADM_MageMonitoringExt_Model_Widget_Events extends Hackathon_MageMonitoring
                 'text',
                 true,
                 'all | community | core | local');
+
         return $this->_config;
     }
 

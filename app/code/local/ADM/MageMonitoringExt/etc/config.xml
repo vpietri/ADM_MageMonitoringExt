@@ -43,27 +43,27 @@
                     <title>Class Events</title>
                     <display_prio>50</display_prio>
                     <widgets>
-                        <events_local>
-                            <impl>ADM_MageMonitoringExt_Model_Widget_Events</impl>
-                            <title>Modules local</title>
-                            <code_pool>local</code_pool>
-                            <collapsed>1</collapsed>
-                            <display_prio>10</display_prio>
-                        </events_local>
-                        <events_community>
-                            <impl>ADM_MageMonitoringExt_Model_Widget_Events</impl>
-                            <title>Modules community</title>
-                            <code_pool>community</code_pool>
-                            <collapsed>1</collapsed>
-                            <display_prio>20</display_prio>
-                        </events_community>          
                         <events_core>
                             <impl>ADM_MageMonitoringExt_Model_Widget_Events</impl>
                             <title>Modules core</title>
                             <code_pool>core</code_pool>
                             <collapsed>1</collapsed>
-                            <display_prio>30</display_prio>
+                            <display_prio>10</display_prio>
                         </events_core>                                        
+                        <events_community>
+                            <impl>ADM_MageMonitoringExt_Model_Widget_Events</impl>
+                            <title>Modules community</title>
+                            <code_pool>community</code_pool>
+                            <collapsed>0</collapsed>
+                            <display_prio>20</display_prio>
+                        </events_community>          
+                        <events_local>
+                            <impl>ADM_MageMonitoringExt_Model_Widget_Events</impl>
+                            <title>Modules local</title>
+                            <code_pool>local</code_pool>
+                            <collapsed>0</collapsed>
+                            <display_prio>30</display_prio>
+                        </events_local>
                     </widgets>
                 </mage_events>    
             </tabs>
@@ -79,9 +79,9 @@
 
         <!-- declare widget folder so magemonitoring can pick up the widgets without tab config -->
         <widgets>
-            <magemonitoring_ext>
+            <adm_magemonitoring>
                 <folder>Model/Widget</folder>
-            </magemonitoring_ext>
+            </adm_magemonitoring>
         </widgets>
     </global>
 
