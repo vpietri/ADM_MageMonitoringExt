@@ -1,7 +1,7 @@
 ADM_MageMonitoringExt
 =====================
 
-Adds events overview to Hackathon_MageMonitoring.
+Adds events overview to [Hackathon_MageMonitoring](https://github.com/magento-hackathon/Hackathon_MageMonitoring).
 
 Facts
 -----
@@ -10,7 +10,7 @@ Facts
 
 Compatibility
 -------------
-- Magento EE 1.13.0.2 (may also work in other versions and CE, not tested)
+- Magento CE 1.9 (may also work in other versions and EE, not tested)
 
 Requirements
 ------------
